@@ -17,3 +17,4 @@ A modern and responsive E-Learning Platform interface built with HTML, CSS, and 
 
 OUTPUT:
 
+<img width="1539" height="877" alt="Image" src="https://github.com/user-attachments/assets/a7bac661-596b-4d36-b179-da2196887c0e" />
