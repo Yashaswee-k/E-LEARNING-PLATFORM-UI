@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E-Learning Platform</h1>
+    <nav>
+      <a onclick="showSection('home')">🏠 Home</a>
+      <a onclick="showSection('courses')">📘 Courses</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="section-center">
+      <h2>🚀 Welcome to Your Learning Journey</h2>
+      <p>Boost your skills with interactive, self-paced courses.</p>
+      <div class="cta-buttons">
+        <button onclick="showSection('courses')">📘 Browse Courses</button>
+      </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="hidden">
+      <h2>📘 Course Listings</h2>
+      <div class="course-list">
+        <div class="course-item">
+          <h3>HTML Basics</h3>
+          <p>Learn the foundation of web development.</p>
+          <button onclick="openCourse('HTML Basics', 'https://www.youtube.com/embed/UB1O30fR-EE')">Go to Course</button>
+        </div>
+
+        <div class="course-item">
+          <h3>JavaScript for Beginners</h3>
+          <p>Start building interactive websites with JavaScript.</p>
+          <button onclick="openCourse('JavaScript for Beginners', 'https://www.youtube.com/embed/W6NZfCO5SIk')">Go to Course</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSE DETAIL SECTION -->
+    <section id="course-detail" class="hidden">
+      <h2 id="course-title">Course Title</h2>
+      <section class="video-section">
+        <h3>Lesson 1: Introduction</h3>
+        <iframe id="course-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+      <section class="progress-section">
+        <h3>Progress</h3>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <button onclick="increaseProgress()">Mark as Complete</button>
+      </section>
+      <br>
+      <button onclick="showSection('courses')">← Back to Courses</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
